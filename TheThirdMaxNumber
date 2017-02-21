@@ -1,0 +1,5 @@
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. 
+The time complexity must be in O(n).
+求一个数组中第三大的值，假如没有第三大的就取最大值。
+这个数组是非空的。时间复杂度必须等于O(n)
+自己的想法：从大到小排序，然后看看能不能取第三大的，注意要排除重复选项。
