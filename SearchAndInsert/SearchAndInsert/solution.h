@@ -1,8 +1,10 @@
+#include <vector>
+using namespace std;
 class Solution {
 public:
-	int searchInsert(int* nums, int numsSize, int target) {
+	int searchInsert(vector<int>& nums, int target) {
 		int i = 0;
-		while (i<numsSize)
+		while (i<nums.size())
 		{
 			if (nums[i]<target)
 				i++;
@@ -12,4 +14,3 @@ public:
 		return i;
 	}
 };
-

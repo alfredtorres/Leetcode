@@ -1,0 +1,3 @@
+﻿  main.cpp
+d:\github\leetcode\searchandinsert\searchandinsert\solution.h(7): warning C4018: “<”: 有符号/无符号不匹配
+  SearchAndInsert.vcxproj -> D:\Github\Leetcode\SearchAndInsert\Debug\SearchAndInsert.exe
