@@ -1,0 +1,4 @@
+﻿  CoinRow.cpp
+d:\github\leetcode\coinrow\coinrow\coinrow.cpp(40): warning C4018: “<”: 有符号/无符号不匹配
+d:\github\leetcode\coinrow\coinrow\coinrow.cpp(52): warning C4018: “<”: 有符号/无符号不匹配
+  CoinRow.vcxproj -> D:\Github\Leetcode\CoinRow\Debug\CoinRow.exe
