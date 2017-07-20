@@ -3,6 +3,8 @@
 
 #include "stdafx.h"
 #include<iostream>
+#include<vector>
+#define M 50
 using namespace std;
 void Swap(int* a, int* b)
 {
@@ -29,11 +31,17 @@ void SelectSort(int *a, int length)
 }
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int a[] = { 89, 45, 68, 90, 29, 34, 17 };
-	int length = sizeof(a) / sizeof(a[0]);
-	cout << "原数组：" << endl;
+	/*int a[] = { 89, 45, 68, 90, 29, 34, 17 };
+	int length = sizeof(a) / sizeof(a[0]);*/
+	int length;
+	int a[M];
+	cout << "输入数组长度：" << endl;
+	cin >> length;
+	cout << "输入数据：" << endl;
 	for (int i = 0; i < length; i++)
-		cout << a[i] << " ";
+	{
+		cin >> a[i];
+	}
 	cout << endl;
 	SelectSort(a, length);
 	cout << "选择排序后数组：" << endl;
