@@ -19,32 +19,62 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	return 0;
 }
-
-void QuickSort(int *array,  int start, int end)
+void QuickSort(int *array, int start, int end)
 {
 	if (start < end)
 	{
-		int i = start, j = end, x = array[start];
-		while (i<j)
+		int i = start, j = end;
+		int k = array[start];
+		while (i < j)
 		{
-			while (i < j&&array[j] > x)
-			{
+			while (i<j&&array[j] > k)
 				j--;
-			}
 			if (i < j)
 				array[i++] = array[j];
-			while (i<j&&array[i]<x)
-			{
+			while (i < j&&array[i] < k)
 				i++;
-			}
 			if (i < j)
 				array[j--] = array[i];
 		}
-		array[i] = x;
+		array[i] = k;
 		QuickSort(array, start, i - 1);
 		QuickSort(array, i + 1, end);
 	}
+
 }
+
+
+
+
+
+
+
+//快速排序不是自己掌握后写的，重新写一下
+//void QuickSort(int *array,  int start, int end)
+//{
+//	if (start < end)
+//	{
+//		int i = start, j = end, x = array[start];
+//		while (i<j)
+//		{
+//			while (i < j&&array[j] > x)
+//			{
+//				j--;
+//			}
+//			if (i < j)
+//				array[i++] = array[j];
+//			while (i<j&&array[i]<x)
+//			{
+//				i++;
+//			}
+//			if (i < j)
+//				array[j--] = array[i];
+//		}
+//		array[i] = x;
+//		QuickSort(array, start, i - 1);
+//		QuickSort(array, i + 1, end);
+//	}
+//}
 //int Partition(int *data,int length,int start,int end)
 //{
 //	//返回分裂位置
