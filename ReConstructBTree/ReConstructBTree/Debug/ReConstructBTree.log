@@ -1,0 +1,3 @@
+﻿  ReConstructBTree.cpp
+d:\github\leetcode\reconstructbtree\reconstructbtree\reconstructbtree.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+  ReConstructBTree.vcxproj -> D:\Github\Leetcode\ReConstructBTree\Debug\ReConstructBTree.exe
